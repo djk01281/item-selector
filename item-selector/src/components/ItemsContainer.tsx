@@ -1,9 +1,9 @@
 import Item from './Item'
 import itemsData from '../data/items.json'
-const ItemsContainer = () =>{
+const ItemsContainer : React.FC<{onClick: React.MouseEventHandler}> = (props) =>{
     const itemsList:string[] = itemsData.itemsArray;
     return <div className = 'ItemsContainer'>{itemsList.map((item)=>(
-        <Item name={item}></Item>
+        <Item onClick={props.onClick} name={item}></Item>
     ))}</div>
 }
 
