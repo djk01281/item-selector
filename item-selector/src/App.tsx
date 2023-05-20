@@ -12,7 +12,7 @@ function App() {
     <>
       <div className="container">
         <ItemsContainer />
-        <Preview />
+        <Preview selectedProp={["item1", "item2"]}/>
        </div> 
     </>
   )
