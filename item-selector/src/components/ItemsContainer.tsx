@@ -1,3 +1,4 @@
+import Item from './Item'
 
 const ItemsContainer = () =>{
     const itemsList:string[] = ["item1", "item2", "item3"];
@@ -6,8 +7,6 @@ const ItemsContainer = () =>{
     ))}</div>
 }
 
-const Item: React.FC<{ name: string }> = (props) =>{
-    return <div className="Item">{props.name}</div>
-}
+
 
 export default ItemsContainer;
